@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.yellow-button {
+    background-color: #f1b828;
+    transition-property: background-color;
+    transition-duration: 100ms;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.yellow-button:hover {
+    background-color: #f2c939;
+}
+
+.yellow-button:active {
+    background-color: #f3da4a;
+}
+
+h1,h2,h3,h4.h5,h6 {
+    text-transform: uppercase;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* Dropdown preset */
+
+.dropdown {
+    user-select: none;
+    padding: 10px;
+    transition-property: background-color;
+    transition-duration: 100ms;
+}
+
+.dropdown p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown hr {
+    color: white;
+    margin-bottom: 0;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.dropdown:active {
+    background-color: rgba(255, 255, 255, .15);
+}
+
+
+
+/* Header area */
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+nav {
+    width: 82.5%;
+    color: white;
+    margin: auto;
+    font-weight: bold;
+}
+
+nav hr {
+    color: white;
+    margin: 0;
+    border-width: 1px;
+}
+
+nav .nav-headings {
+    display: flex;
+
+    margin: auto;
+    width: max-content;
+}
+
+nav .nav-headings:first-child a {
+    font-size: 0.9rem;
+}
+
+.nav-bottom {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 5px;
+    transition-property: color;
+    transition-duration: 250ms;
+}
+
+nav a:hover {
+    color: #A9A39C;
+}
+
+nav img:hover {
+
+}
+
+
+
+/* Main content */
+
+main {
+   
+}
+
+.image-darkener {
+    background: linear-gradient(0deg, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, .5) 100%);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Book now section */
+
+#book-now {
+    background-image: url('./assets/The-View-Setup-website-hero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#book-now>.image-darkener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#book-now .center-image {
+    position: absolute;
+    top: 260px;
+}
+
+#book-now .down-arrow {
+    box-sizing: border-box;
+    position: absolute;
+    padding: 20px;
+    top: 700px;
+    transition-property: padding;
+    transition-duration: 500ms;
+}
+
+#book-now .down-arrow:hover {
+    position: absolute;
+    padding-top: 40px;
+}
+
+.booking-selection {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    gap: 50px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 1.5rem;
+    align-items: flex-end;
+}
+
+.booking-selection-specifications {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.booking-selection .dropdown {
+    width: 200px;
+}
+
+.booking-selection>.dropdown {
+    width: 300px;
+}
+
+.booking-selection a {
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 200px;
+    text-align: center;
+}
+
+.booking-selection a:last-of-type {
+    padding: 10px 20px;
+    border: 1px solid white;
+    font-size: .9rem;
+    font-weight: bold;
+    transition-property: color;
+    transition-duration: 250ms;
+}
+
+.booking-selection a:last-of-type:hover {
+    color: #8E6E4D;
+}
+
