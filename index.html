@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./style.css">
     <title>The Athenaeum</title>
     <link rel="shortcut icon" href="./assets/4f2f8fd7-8bed-4695-aeed-19cedee1d5b6/vector10.svg" type="image/x-icon">
+    <script>
+        // TODO: make a +/l counter for guests & rooms
+        // TODO: fix the date pickers
+    </script>
 </head>
 <body>
     <header>
@@ -18,7 +22,7 @@
             </div>
             <hr>
             <div class="nav-bottom">
-                <img src="./assets/4f2f8fd7-8bed-4695-aeed-19cedee1d5b6/vector10.svg" alt="The athenaeum">
+                <img src="./assets/4f2f8fd7-8bed-4695-aeed-19cedee1d5b6/vector10.svg" alt="The Athenaeum">
                 <div class="nav-headings">
                     <a href="#">Stay</a>
                     <a href="#">Residences</a>
@@ -30,7 +34,13 @@
                     <a href="#">Offers</a>
                 </div>
                 <div class="dropdown">
-                    <p><span>EN</span><span class="material-symbols-sharp">expand_more</span></p>
+                    <input type="radio" name="options" id="radio-locale">
+                    <label for="radio-locale"><span>EN</span><span class="material-symbols-sharp">expand_more</span></label>
+                    <article>
+                        <a href="#">EN</a>
+                        <a href="#">DE</a>
+                        <a href="#">DA</a>
+                    </article>
                 </div>
             </div>
             <hr>
@@ -38,33 +48,235 @@
     </header>
     <main>
         <section id="book-now">
-            <div class="image-darkener">
+            <input type="radio" name="options" id="book-click-away">
+            <label for="book-click-away" class="image-darkener">
                 <img class="center-image" src="./assets/4f2f8fd7-8bed-4695-aeed-19cedee1d5b6/Atheneum-1-1.svg" alt="The athenaeum Hotel & Residences">
                 <a class="down-arrow" href="#did-you-know">
                     <img src="./assets/4f2f8fd7-8bed-4695-aeed-19cedee1d5b6/vector8.svg" alt="Arrow down">
                 </a>
                 <div class="booking-selection">
                     <div class="dropdown">
-                        <p><span>Book a stay</span><span class="material-symbols-sharp">expand_more</span><hr></p>
+                        <input type="radio" name="options" id="radio-book-a-stay">
+                        <label for="radio-book-a-stay"><p><span>Book a stay</span><span class="material-symbols-sharp">expand_more</span></p><hr></label>
                     </div>
                     <div class="booking-selection-specifications">
                         <div class="dropdown">
-                            <p><span>Arrival</span><span class="material-symbols-sharp">today</span><hr></p>
+                            <input type="radio" name="options" id="radio-arrival">
+                            <label for="radio-arrival"><p><span>Arrival</span><span class="material-symbols-sharp">today</span></p><hr></label>
+                            <article class="calendar-view">
+                                <section class="calendar-days-container">
+                                    <h5>Day</h5>
+                                    <div class="calendar-days">
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-1">
+                                        <label for="arrival-calendar-day-1">1</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-2">
+                                        <label for="arrival-calendar-day-2">2</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-3">
+                                        <label for="arrival-calendar-day-3">3</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-4">
+                                        <label for="arrival-calendar-day-4">4</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-5">
+                                        <label for="arrival-calendar-day-5">5</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-6" checked>
+                                        <label for="arrival-calendar-day-6">6</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-7">
+                                        <label for="arrival-calendar-day-7">7</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-8">
+                                        <label for="arrival-calendar-day-8">8</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-9">
+                                        <label for="arrival-calendar-day-9">9</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-10">
+                                        <label for="arrival-calendar-day-10">10</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-11">
+                                        <label for="arrival-calendar-day-11">11</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-12">
+                                        <label for="arrival-calendar-day-12">12</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-13">
+                                        <label for="arrival-calendar-day-13">13</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-14">
+                                        <label for="arrival-calendar-day-14">14</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-15">
+                                        <label for="arrival-calendar-day-15">15</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-16">
+                                        <label for="arrival-calendar-day-16">16</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-17">
+                                        <label for="arrival-calendar-day-17">17</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-18">
+                                        <label for="arrival-calendar-day-18">18</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-19">
+                                        <label for="arrival-calendar-day-19">19</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-20">
+                                        <label for="arrival-calendar-day-20">20</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-21">
+                                        <label for="arrival-calendar-day-21">21</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-22">
+                                        <label for="arrival-calendar-day-22">22</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-23">
+                                        <label for="arrival-calendar-day-23">23</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-24">
+                                        <label for="arrival-calendar-day-24">24</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-25">
+                                        <label for="arrival-calendar-day-25">25</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-26">
+                                        <label for="arrival-calendar-day-26">26</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-27">
+                                        <label for="arrival-calendar-day-27">27</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-28">
+                                        <label for="arrival-calendar-day-28">28</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-29">
+                                        <label for="arrival-calendar-day-29">29</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-30">
+                                        <label class="calendar-day30" for="arrival-calendar-day-30">30</label>
+                                        <input type="radio" name="arrival-calendar-day" id="arrival-calendar-day-31">
+                                        <label class="calendar-day31 calendar-day30" for="arrival-calendar-day-31">31</label>
+                                    </div>
+                                </section>
+                                <section class="calendar-months-container">
+                                    <h5>Month</h5>
+                                    <div class="calendar-months">
+                                        <input type="radio" name="arrival-calendar-month" id="arrival-calendar-month-january">
+                                        <label for="arrival-calendar-month-january">January</label>
+                                        <input class="calendar-month-february" type="radio" name="arrival-calendar-month" id="arrival-calendar-month-february">
+                                        <label for="arrival-calendar-month-february">February</label>
+                                        <input type="radio" name="arrival-calendar-month" id="arrival-calendar-month-march">
+                                        <label for="arrival-calendar-month-march">March</label>
+                                        <input class="calendar-month-april" type="radio" name="arrival-calendar-month" id="arrival-calendar-month-april">
+                                        <label for="arrival-calendar-month-april">April</label>
+                                        <input type="radio" name="arrival-calendar-month" id="arrival-calendar-month-may" checked>
+                                        <label for="arrival-calendar-month-may">May</label>
+                                        <input class="calendar-month-june" type="radio" name="arrival-calendar-month" id="arrival-calendar-month-june">
+                                        <label for="arrival-calendar-month-june">June</label>
+                                        <input type="radio" name="arrival-calendar-month" id="arrival-calendar-month-july">
+                                        <label for="arrival-calendar-month-july">July</label>
+                                        <input type="radio" name="arrival-calendar-month" id="arrival-calendar-month-august">
+                                        <label for="arrival-calendar-month-august">August</label>
+                                        <input class="calendar-month-september" type="radio" name="arrival-calendar-month" id="arrival-calendar-month-september">
+                                        <label for="arrival-calendar-month-september">September</label>
+                                        <input type="radio" name="arrival-calendar-month" id="arrival-calendar-month-october">
+                                        <label for="arrival-calendar-month-october">October</label>
+                                        <input class="calendar-month-november" type="radio" name="arrival-calendar-month" id="arrival-calendar-month-november">
+                                        <label for="arrival-calendar-month-november">November</label>
+                                        <input type="radio" name="arrival-calendar-month" id="arrival-calendar-month-december">
+                                        <label for="arrival-calendar-month-december">December</label>
+                                    </div>
+                                </section>
+                            </article>
                         </div>
                         <div class="dropdown">
-                            <p><span>Departure</span><span class="material-symbols-sharp">today</span><hr></p>
+                            <input type="radio" name="options" id="radio-departure">
+                            <label for="radio-departure"><p><span>Departure</span><span class="material-symbols-sharp">today</span></p><hr></label>
+                            <article class="calendar-view">
+                                <section class="calendar-days-container">
+                                    <h5>Day</h5>
+                                    <div class="calendar-days">
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-1">
+                                        <label for="departure-calendar-day-1">1</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-2">
+                                        <label for="departure-calendar-day-2">2</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-3">
+                                        <label for="departure-calendar-day-3">3</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-4">
+                                        <label for="departure-calendar-day-4">4</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-5">
+                                        <label for="departure-calendar-day-5">5</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-6" checked>
+                                        <label for="departure-calendar-day-6">6</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-7">
+                                        <label for="departure-calendar-day-7">7</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-8">
+                                        <label for="departure-calendar-day-8">8</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-9">
+                                        <label for="departure-calendar-day-9">9</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-10">
+                                        <label for="departure-calendar-day-10">10</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-11">
+                                        <label for="departure-calendar-day-11">11</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-12">
+                                        <label for="departure-calendar-day-12">12</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-13">
+                                        <label for="departure-calendar-day-13">13</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-14">
+                                        <label for="departure-calendar-day-14">14</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-15">
+                                        <label for="departure-calendar-day-15">15</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-16">
+                                        <label for="departure-calendar-day-16">16</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-17">
+                                        <label for="departure-calendar-day-17">17</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-18">
+                                        <label for="departure-calendar-day-18">18</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-19">
+                                        <label for="departure-calendar-day-19">19</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-20">
+                                        <label for="departure-calendar-day-20">20</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-21">
+                                        <label for="departure-calendar-day-21">21</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-22">
+                                        <label for="departure-calendar-day-22">22</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-23">
+                                        <label for="departure-calendar-day-23">23</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-24">
+                                        <label for="departure-calendar-day-24">24</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-25">
+                                        <label for="departure-calendar-day-25">25</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-26">
+                                        <label for="departure-calendar-day-26">26</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-27">
+                                        <label for="departure-calendar-day-27">27</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-28">
+                                        <label for="departure-calendar-day-28">28</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-29">
+                                        <label for="departure-calendar-day-29">29</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-30">
+                                        <label class="calendar-day30" for="departure-calendar-day-30">30</label>
+                                        <input type="radio" name="departure-calendar-day" id="departure-calendar-day-31">
+                                        <label class="calendar-day31 calendar-day30" for="departure-calendar-day-31">31</label>
+                                    </div>
+                                </section>
+                                <section class="calendar-months-container">
+                                    <h5>Month</h5>
+                                    <div class="calendar-months">
+                                        <input type="radio" name="departure-calendar-month" id="departure-calendar-month-january">
+                                        <label for="departure-calendar-month-january">January</label>
+                                        <input class="calendar-month-february" type="radio" name="departure-calendar-month" id="departure-calendar-month-february">
+                                        <label for="departure-calendar-month-february">February</label>
+                                        <input type="radio" name="departure-calendar-month" id="departure-calendar-month-march">
+                                        <label for="departure-calendar-month-march">March</label>
+                                        <input class="calendar-month-april" type="radio" name="departure-calendar-month" id="departure-calendar-month-april">
+                                        <label for="departure-calendar-month-april">April</label>
+                                        <input type="radio" name="departure-calendar-month" id="departure-calendar-month-may" checked>
+                                        <label for="departure-calendar-month-may">May</label>
+                                        <input class="calendar-month-june" type="radio" name="departure-calendar-month" id="departure-calendar-month-june">
+                                        <label for="departure-calendar-month-june">June</label>
+                                        <input type="radio" name="departure-calendar-month" id="departure-calendar-month-july">
+                                        <label for="departure-calendar-month-july">July</label>
+                                        <input type="radio" name="departure-calendar-month" id="departure-calendar-month-august">
+                                        <label for="departure-calendar-month-august">August</label>
+                                        <input class="calendar-month-september" type="radio" name="departure-calendar-month" id="departure-calendar-month-september">
+                                        <label for="departure-calendar-month-september">September</label>
+                                        <input type="radio" name="departure-calendar-month" id="departure-calendar-month-october">
+                                        <label for="departure-calendar-month-october">October</label>
+                                        <input class="calendar-month-november" type="radio" name="departure-calendar-month" id="departure-calendar-month-november">
+                                        <label for="departure-calendar-month-november">November</label>
+                                        <input type="radio" name="departure-calendar-month" id="departure-calendar-month-december">
+                                        <label for="departure-calendar-month-december">December</label>
+                                    </div>
+                                </section>
+                            </article>
                         </div>
                         <div class="dropdown">
-                            <p><span>Guests</span><span class="material-symbols-sharp">expand_more</span><hr></p>
+                            <input type="radio" name="options" id="radio-guests">
+                            <label for="radio-guests"><p><span>Guests</span><span class="material-symbols-sharp">expand_more</span></p><hr></label>
                         </div>
                         <div class="dropdown">
-                            <p><span>Rooms</span><span class="material-symbols-sharp">expand_more</span><hr></p>
+                            <input type="radio" name="options" id="radio-rooms">
+                            <label for="radio-rooms"><p><span>Rooms</span><span class="material-symbols-sharp">expand_more</span></p><hr></label>
                         </div>
                         <a href="#" class="yellow-button">Book Now</a>
                         <a href="#">Best rates when you book direct</a>
                     </div>
                 </div>
-            </div>
+            </label>
         </section>
         <section id="did-you-know">
             <aside class="infobox">
